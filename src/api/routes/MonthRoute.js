@@ -1,19 +1,19 @@
 'use strict';
 
-const CurrentDateInterface = require('../../domain/CurrentDateInterface');
+const CurrentMonthController = require('../../controllers/CurrentMonthController');
 
 class MonthRoute {
   #server;
-  #currentDateInterface;
+  #currentMonthController;
 
   #handle(req, res) {
-    const currentMonth = this.#currentDateInterface.getMonth();
+    const currentMonth = this.#currentMonthController.getCurrentMonth();
 
     res.json(currentMonth);
   }
 
   constructor(server) {
-    this.#currentDateInterface = new CurrentDateInterface();
+    this.#currentMonthController = new CurrentMonthController();
     this.#server = server;
   }
 
