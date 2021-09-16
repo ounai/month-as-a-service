@@ -1,0 +1,21 @@
+{
+  "name": "month-as-a-service",
+  "version": "1.0.0",
+  "description": "Webscale app to disrupt & democratize the month numbering market gap",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ounai/month-as-a-service.git"
+  },
+  "author": "Onni Rantanen (@ounai)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ounai/month-as-a-service/issues"
+  },
+  "homepage": "https://github.com/ounai/month-as-a-service#readme"
+}
