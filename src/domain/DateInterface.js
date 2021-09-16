@@ -1,8 +1,14 @@
 'use strict';
 
 class DateInterface {
-  constructor() {
-    // TODO
+  #date;
+
+  constructor(date) {
+    this.#date = date;
+  }
+
+  getMonth() {
+    return this.#date.getMonth() + 1;
   }
 }
 
